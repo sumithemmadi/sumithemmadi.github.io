@@ -8,8 +8,10 @@ _I am undergraduate IT student, Web Developer, UI/UX Designer and Open Source Co
 
 ### 🛠 My skills include 
 -   _Web Developer_
+
 ### 🔭 I’m currently working on ...
 - _Problem Solving Skills in Data Structures and Algorithms._
+
 ### 🌱 I’m currently learning ...
   ![C++](https://img.shields.io/badge/C++-040E2C?style=for-the-badge&logo=c%2B%2B&logoColor=00599C)
   ![HTML](https://img.shields.io/badge/-HTML-040E2C?style=for-the-badge&logo=HTML5)
@@ -17,8 +19,10 @@ _I am undergraduate IT student, Web Developer, UI/UX Designer and Open Source Co
   ![php](https://img.shields.io/badge/PHP-040E2C?style=for-the-badge&logo=php&logoColor=white)
   ![Python](https://img.shields.io/badge/Python-040E2C?style=for-the-badge&logo=python&logoColor=white)
   ![Node.js](https://img.shields.io/badge/-Node.js-040E2C?style=for-the-badge&logo=node.js)
+
 ### 👯 I’m looking to collaborate on ...
 - _I’m looking forward to collaborate on different open-source projects._
+
 ### 🛠 Languages and Tools I use 
 
   ![C](https://img.shields.io/badge/-C-040E2C?style=for-the-badge&logo=C)
@@ -46,6 +50,7 @@ _I am undergraduate IT student, Web Developer, UI/UX Designer and Open Source Co
 #### 🤔 I’m looking for help with ...
 #### 💬 Ask me about ...
 #### 📫 How to reach me: ... -->
+
 #### 📫 Connect with me:
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sumithemmadi244@gmail.com)
 [![Protonmail](https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:sumithemmadi@protonmail.com)
