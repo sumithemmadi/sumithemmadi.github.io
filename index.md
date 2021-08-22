@@ -22,7 +22,7 @@
 - _Check out my full [projects list here](/projects_list)._
 -->
 
-### 🛠 My skills include 
+<h3> 🛠 My skills include </h3>
 -   _Web Developer_
 
 ### 🔭 I’m currently working on ...
