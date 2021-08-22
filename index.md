@@ -2,8 +2,8 @@
 <!-- [![Website](https://img.shields.io/badge/Text-Text-green?style=flat-square)](https://google.com) -->
 [![Profile views](https://gpvc.arturio.dev/sumithemmadi)](https://github.com/sumithemmadi/)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/sumithemmadi/)
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=sherif&color=F70000&lines=I'm+a+Student;I'm+a+Developer;)](https://git.io/typing-svg)
-
+<!-- [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=sherif&color=F70000&lines=I'm+a+Student;I'm+a+Developer;)](https://git.io/typing-svg)
+-->
 <br />
 <img align="right" src="round-profile.png" width="160px" style="max-width:100%;">
 
