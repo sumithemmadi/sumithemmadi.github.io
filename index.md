@@ -5,15 +5,15 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=sherif&color=F70000&lines=I'm+a+Student;I'm+a+Developer;)](https://git.io/typing-svg)
 
 <br />
-<img align="right" src="https://raw.githubusercontent.com/akshitagupta15june/akshitagupta15june/master/200w.webp" width="140px" style="max-width:100%;">
+<img align="right" src="round-profile.png" width="160px" style="max-width:100%;">
 
 
 <h3><b>⭐About me</b></h3>
 
-- _Hey I'm sumith I'm web developer and  undergraduate IT student at Indian Institute of Information Technology , Surat._ </br>
+- _Hey I'm <a href="sumithemmadi.github.com">sumith</a> I'm web developer and  undergraduate IT student at <a href="https://www.google.com/search?q=IIIT+Surat&oq=IIIT+Surat&aqs=chrome..69i57j69i60l3j69i65.7945j0j7&client=ms-android-xiaomi-rev1&sourceid=chrome-mobile&ie=UTF-8">Indian Institute of Information Technology , Surat</a>._ </br>
 - _I like to build things with Deep Learning/Machine Learning, Docker, Python, TypeScript (and JavaScript), modern backend APIs, and modern frontend frameworks._</br>
 - _Dreaming up ideas and making them come true is where my passion lies._</br>
-- _Check out my full projects list here._
+- _Check out my_ <a href="sumithemmadi.github.com">project list here</a>.
 
 <!--
 - _Hey I'm [sumith](sumithemmadi.github.com) I'm web developer and  undergraduate IT student at [Indian Institute of Information Technologyand , Surat](https://www.google.com/search?q=IIIT+Surat&oq=IIIT+Surat&aqs=chrome..69i57j69i60l3j69i65.7945j0j7&client=ms-android-xiaomi-rev1&sourceid=chrome-mobile&ie=UTF-8)._ </br>
