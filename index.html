@@ -4,19 +4,93 @@
 
 <head>
     <title>Sumith Emmadi</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Description" content="SumithEmmadi: My first Portfolio">
-    <meta name="keywords" content="sumith,emmadi,sumithemmadi,sumithemmadi,IIITSurat,Warangal,Surat,India">
-    <meta name="theme-color" content="#9d4edd">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="Description" content="SumithEmmadi: My first Portfolio" />
+    <meta name="keywords" content="sumith,emmadi,sumithemmadi,IIIT,IIITSurat,Warangal,Surat,India" />
+    <meta name="theme-color" content="#9d4edd" />
+
+
+    <link rel="stylesheet" href="/asserts/css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/round-profile.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/round-profile.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li style="float:right"><a class="active" href="#about">About</a></li>
-    </ul>
+    <nav>
+        <h1>Sumith Emmadi</h1>
+        <ul class="navigator">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#contact">Contact Me</a></li>
+            <li><a class="nav-link" href="#about">About Me</a></li>
+            <li><a class="nav-link" href="#projects">My Projects</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+
+    <section class="hero" id="about">
+        <img src="images/round-profile.png" alt="sumith-emmadi" loading="lazy" class="hero-img" />
+        <div class="bio animate__animated animate__shakeX">
+            <h2 class="bio-title">About Me</h2>
+            <p class="bio-text">
+                Hi this is sumith here my bio goes here
+            </p>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Some Of My Recent Projects</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <img src="https://opengraph.githubassets.com/1/sumithemmadi/truecallerjs" alt="truecallerjs" loading="lazy" class="project-pic" />
+                <h3 class="project-title">truecallerjs</h3>
+                <p class="project-details">Truecallerjs : A simple package to search phone number details.</p>
+                <a href="https://github.com/sumithemmadi/truecallerjs" target="_blank" class="project-link">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="https://opengraph.githubassets.com/1/sumithemmadi/json-to-plain-text" alt="json-to-plain-text" loading="lazy" class="project-pic" />
+                <h3 class="project-title">json-to-plain-text</h3>
+                <p class="project-details">Convert any JSON to PLAIN TEXT</p>
+                <a href="https://github.com/sumithemmadi/json-to-plain-text" target="_blank" class="project-link">Check it Out</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xyylngw" method="POST">
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
+                    </div>
+                    <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
