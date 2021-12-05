@@ -89,6 +89,20 @@ nav ul li {
     display: none;
 }
 
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+}
+
+.home img {
+    height: 40.5rem;
+    width: 150.5rem;
+}
+
 .hero {
     display: flex;
     align-items: center;

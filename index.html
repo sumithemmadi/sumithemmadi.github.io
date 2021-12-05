@@ -24,14 +24,18 @@
         <h1>Sumith Emmadi</h1>
         <ul class="navigator">
             <li><a class="nav-link" href="#home">Home</a></li>
-            <li><a class="nav-link" href="#contact">Contact Me</a></li>
             <li><a class="nav-link" href="#about">About Me</a></li>
             <li><a class="nav-link" href="#projects">My Projects</a></li>
+            <li><a class="nav-link" href="#contact">Contact Me</a></li>
         </ul>
         <button class="burger-menu" id="burger-menu">
             <ion-icon class="bars" name="menu-outline"></ion-icon>
         </button>
     </nav>
+
+    <div class="home" id="home">
+        <img class="home-image" src="/images/home.jpg" alt="sumith-emmadi" loading="lazy" class="hero-img" />
+    </div>
 
     <section class="hero" id="about">
         <img src="images/round-profile.png" alt="sumith-emmadi" loading="lazy" class="hero-img" />
@@ -58,14 +62,19 @@
                 <p class="project-details">Convert any JSON to PLAIN TEXT</p>
                 <a href="https://github.com/sumithemmadi/json-to-plain-text" target="_blank" class="project-link">Check it Out</a>
             </div>
-        </div>
+            <div class="project-container project-card">
+                <img src="https://opengraph.githubassets.com/1/sumithemmadi/Tor-Onion-Service-On-Heroku" alt="Tor-Onion-Service-On-Heroku" loading="lazy" class="project-pic" />
+                <h3 class="project-title">Tor Onion Service On Heroku</h3>
+                <p class="project-details">Host Onion services in dark web using Heroku CLI</p>
+                <a href="https://github.com/sumithemmadi/Tor-Onion-Service-On-Heroku" target="_blank" class="project-link">Check it Out</a>
+            </div>
     </section>
 
     <section class="contact" id="contact">
         <h2>Get In Touch With Me</h2>
         <div class="contact-form-container">
             <div class="contact-form">
-                <form action="https://formspree.io/f/xyylngw" method="POST">
+                <form action="/php/post.php" method="POST">
                     <div class="form-control">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required />
