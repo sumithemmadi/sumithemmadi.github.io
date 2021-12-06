@@ -7,99 +7,53 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="Description" content="SumithEmmadi: My first Portfolio" />
-    <meta name="keywords" content="sumith,emmadi,sumithemmadi,IIIT,IIITSurat,Warangal,Surat,India" />
+    <meta name="Description" content="My portfolio" />
+    <meta name="keywords" content="sumithemmadi,sumith,emmadi,iiit,IIITSurat,Warangal" />
     <meta name="theme-color" content="#9d4edd" />
 
-
-    <link rel="stylesheet" href="/asserts/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/asserts/css/style.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="images/round-profile.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="images/round-profile.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    <script>
+        function showMenu() {
+            document.getElementById("myMenu").style.width = "250px";
+        }
+
+        function closeMenu() {
+            document.getElementById("myMenu").style.width = "0";
+        }
+    </script>
     <nav>
         <h1>Sumith Emmadi</h1>
-        <ul class="navigator">
-            <li><a class="nav-link" href="#home">Home</a></li>
-            <li><a class="nav-link" href="#about">About Me</a></li>
-            <li><a class="nav-link" href="#projects">My Projects</a></li>
-            <li><a class="nav-link" href="#contact">Contact Me</a></li>
-        </ul>
-        <button class="burger-menu" id="burger-menu">
-            <ion-icon class="bars" name="menu-outline"></ion-icon>
-        </button>
+        <div id="myMenu" class="nav-menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">My Projects</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+        <span style="font-size:20px;cursor:pointer" onclick="showMenu()">&#9776; Menu</span>
     </nav>
-
-    <div class="home" id="home">
-        <img class="home-image" src="/images/home.jpg" alt="sumith-emmadi" loading="lazy" class="hero-img" />
+    <div class="home-background" style="background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);">
+        <br>
     </div>
-
-    <section class="hero" id="about">
-        <img src="images/round-profile.png" alt="sumith-emmadi" loading="lazy" class="hero-img" />
-        <div class="bio animate__animated animate__shakeX">
-            <h2 class="bio-title">About Me</h2>
-            <p class="bio-text">
-                Hi this is sumith here my bio goes here
-            </p>
+    <section class="about">
+        <img src="/images/round-profile.png" alt="My-Image" />
+        <div class="bio">
+            <h1>About Me</h1>
+            <p>Here my bio</p>
         </div>
     </section>
-
-    <section class="projects" id="projects">
-        <h2 class="projects-title">Some Of My Recent Projects</h2>
-        <div class="projects-container">
-            <div class="project-container project-card">
-                <img src="https://opengraph.githubassets.com/1/sumithemmadi/truecallerjs" alt="truecallerjs" loading="lazy" class="project-pic" />
-                <h3 class="project-title">truecallerjs</h3>
-                <p class="project-details">Truecallerjs : A simple package to search phone number details.</p>
-                <a href="https://github.com/sumithemmadi/truecallerjs" target="_blank" class="project-link">Check it Out</a>
-            </div>
-            <div class="project-container project-card">
-                <img src="https://opengraph.githubassets.com/1/sumithemmadi/json-to-plain-text" alt="json-to-plain-text" loading="lazy" class="project-pic" />
-                <h3 class="project-title">json-to-plain-text</h3>
-                <p class="project-details">Convert any JSON to PLAIN TEXT</p>
-                <a href="https://github.com/sumithemmadi/json-to-plain-text" target="_blank" class="project-link">Check it Out</a>
-            </div>
-            <div class="project-container project-card">
-                <img src="https://opengraph.githubassets.com/1/sumithemmadi/Tor-Onion-Service-On-Heroku" alt="Tor-Onion-Service-On-Heroku" loading="lazy" class="project-pic" />
-                <h3 class="project-title">Tor Onion Service On Heroku</h3>
-                <p class="project-details">Host Onion services in dark web using Heroku CLI</p>
-                <a href="https://github.com/sumithemmadi/Tor-Onion-Service-On-Heroku" target="_blank" class="project-link">Check it Out</a>
-            </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2>Get In Touch With Me</h2>
-        <div class="contact-form-container">
-            <div class="contact-form">
-                <form action="/php/post.php" method="POST">
-                    <div class="form-control">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required />
-                    </div>
-                    <div class="form-control">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required />
-                    </div>
-                    <div class="form-control">
-                        <label for="message">Message</label>
-                        <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
-                    </div>
-                    <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
-                </form>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
-
-    <!-- Ion icons scripts -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

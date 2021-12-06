@@ -1,4 +1,0 @@
-sender-name = Test
-sender-email = test@test.com
-message = hi sumith
-
