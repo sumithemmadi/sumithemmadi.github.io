@@ -109,116 +109,115 @@ nav h1 {
     }
 }
 
-.home-background {
-    font-size: 545px;
-}
-
-.about {
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    max-width: 68.75rem;
-    margin: 50px auto 50px auto;
-}
-
-.bio img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 10.5rem;
-    width: 10.5rem;
-}
-
 .bio {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20rem;
-    padding: 0.625rem;
+    margin: 12px;
     border-radius: 6px;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(45, 207, 253, 0.43771011822697825) 100%);
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
 .bio h1 {
     text-align: center;
-    margin-bottom: var(--bottom-margin);
+    padding-top: 15px;
 }
 
-.bio p {
-    text-align: justify;
-    line-height: var(--line-height);
-    padding: 0.3rem 0;
-}
-
-.skills {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    max-width: 68.75rem;
-    margin: 50px auto 50px auto;
-}
-
-section h1 {
-    text-align: center;
-}
-
-.skills-card-group {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-.skills-card {
+.bio-image {
+    width: 160px;
+    height: 160px;
     display: block;
-    margin: 40px;
-    height: 250px;
-    width: 250px;
-    padding: 0.625rem;
-    border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-}
-
-.skills-card img {
-    display: block;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
-    height: 10.5rem;
-    width: 10.5rem;
 }
 
-.skills-card p {
+.bio li {
+    font-family: var(--font-family);
+    text-align: justify;
+    font-size: x-large;
+    padding: 5px 30px 5px 30px;
+}
+
+.three-cards {
+    display: flex;
+}
+
+.skills h1 {
+    margin-top: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+.skill-card {
+    display: block;
     text-align: center;
     margin: 20px auto 20px auto;
+    height: 190px;
+    width: 150px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--secondary-shadow);
 }
 
-.project-card-group {
-    align-content: center;
+.html-svg {
+    padding: 1rem;
+    text-align: center;
     justify-content: center;
-    border-radius: 1.2rem;
-    text-align: center;
 }
 
-.project-card {
+.js-svg {
+    padding: 1rem;
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+}
+
+.nodejs-svg {
+    padding: 30px 10px 20px 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.projects h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+/* .project-cards {
+    margin: 100px 200px 2000px 40px;
+    background-color: #3745e0;
+} */
+
+.project-three-cards {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.project-cards {
     display: block;
-    margin: 40px;
-    /* height: 300px; */
-    width: 400px;
-    padding: 0.625rem;
-    border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-    /* background-color: gray; */
-}
-
-.project-card .truecallerjs {
-    height: 15rem;
-    width: 23.6rem;
-    margin: 5px auto 5px auto;
-    border-radius: 6px;
-    box-shadow: 0px 1px 1px 1px var(--primary-shadow);
-}
-
-.project-card h3 {
     text-align: center;
+    margin: 20px;
+    height: 400px;
+    width: 300px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--secondary-shadow);
+}
+
+.truecallerejs {
+    margin: 10px;
+    height: 200px;
+    width: 280px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 2px 2px var(--secondary-shadow);
+}
+
+.contact-form-container {
+    display: block;
+    margin: 5px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--secondary-shadow);
+}
+
+.contact-form {
+    padding: 10px
 }

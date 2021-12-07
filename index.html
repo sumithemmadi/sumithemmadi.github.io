@@ -44,97 +44,85 @@
         </div>
         <span style="font-size:20px;cursor:pointer" onclick="showMenu()">&#9776; Menu</span>
     </nav>
-    <div class="home-background" style="background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);">
+    <div class="home-background" style="background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(133,70,252,1) 100%);font-size: 550px;" id="home">
         <br>
     </div>
     <section class="about" id="about">
         <div class="bio">
             <h1>About Me</h1>
-            <img src="/images/round-profile.png" alt="My-Image" />
-            <p>Here my bio</p>
+            <img src="/images/round-profile.png" alt="My-Image" class="bio-image" />
+            <p class="bio-text">
+                <ul>
+                    <li>Hey I'm sumith I'm web developer and undergraduate student at Indian Institute of Information Technology, Surat.</li>
+                    <li>I like to build things with Deep Learning/Machine Learning, Docker, Python, JavaScript , PHP</li>
+                    <li>Dreaming up ideas and making them come true is where my passion lies.</li>
+                    <li>Check out my full projects list here.</li>
+                </ul>
+            </p>
         </div>
     </section>
-    <section class="Skills" id="Skills">
+    <section class="skills" id="skills">
         <h1>My Skills</h1>
-        <div class="skills-card-group">
-            <div class="skills-card">
-                <img src="/images/round-profile.png" alt="My-Image" />
-                <p>HTML</p>
+        <div class="three-cards">
+            <div class="skill-card">
+                <img src="/images/icons/HTML5_Logo.svg" alt="html logo" class="html-svg" />
+                <b>HTML</b>
             </div>
-            <div class="skills-card">
-                <img src="/images/round-profile.png" alt="My-Image" />
-                <p>HTML</p>
-            </div>
-            <div class="skills-card">
-                <img src="/images/round-profile.png" alt="My-Image" />
-                <p>HTML</p>
+            <div class="skill-card">
+                <img src="/images/icons/js_logo.svg" alt="html logo" class="js-svg" />
+                <b>JavaScript</b>
             </div>
         </div>
-        <div class="skills-card-group">
-            <div class="skills-card">
-                <img src="/images/round-profile.png" alt="My-Image" />
-                <p>HTML</p>
+        <div class="three-cards">
+            <div class="skill-card">
+                <img src="/images/icons/nodejs-new-pantone-black.svg" alt="html logo" class="nodejs-svg" />
+                <b>NodeJS</b>
             </div>
-            <div class="skills-card">
-                <img src="/images/round-profile.png" alt="My-Image" />
-                <p>HTML</p>
-            </div>
-            <div class="skills-card">
-                <img src="/images/round-profile.png" alt="My-Image" />
-                <p>HTML</p>
+            <div class="skill-card">
+                <img src="/images/icons/Python-logo-notext.svg" alt="html logo" class="js-svg" />
+                <b>Python</b>
             </div>
         </div>
     </section>
-    <section class="my-projects" id="projects">
-        <h1 style="text-align: center;">Some of my Recent Projects</h1>
-        <div class="project-card-group">
-            <div class="project-card">
-                <img src="/images/projects/truecallerjs.PNG" alt="truecallerjs" class="truecallerjs">
-                <h3>Truecallerjs</h3>
-                <p style="text-align: center; margin-top: 10px;">
-                    <a href="https://www.npmjs.com/package/truecallerjs"><img src="https://img.shields.io/npm/v/truecallerjs.svg" alt="Version" class="npm-image"></a>
-                    <a href="https://github.com/sumithemmadi/truecallerjs/stargazers"><img src="https://img.shields.io/github/stars/sumithemmadi/truecallerjs" alt="Stars" class="npm-image"></a>
-                    <a href="https://github.com/sumithemmadi/truecallerjs"><img src="https://img.shields.io/npm/dt/truecallerjs.svg" alt="weekly Download" class="npm-image"></a>
-                </p>
-                <br>
-                <p style="text-align: center;">A simple package to search phone number details.</p>
+    <section class="projects" id="projects">
+        <h1>Some of my Recent Projects</h1>
+        <div class="project-three-cards">
+            <div class="project-cards">
+                <img src="/images/projects/truecallerjs.PNG" alt="html logo" class="truecallerejs" />
+                <h3>Truecallerejs</h3>
             </div>
-            <div class="project-card">
-                <img src="/images/projects/truecallerjs.PNG" alt="truecallerjs" class="truecallerjs">
-                <h3>Truecallerjs</h3>
-                <p style="text-align: center; margin-top: 10px;">
-                    <a href="https://www.npmjs.com/package/truecallerjs"><img src="https://img.shields.io/npm/v/truecallerjs.svg" alt="Version" class="npm-image"></a>
-                    <a href="https://github.com/sumithemmadi/truecallerjs/stargazers"><img src="https://img.shields.io/github/stars/sumithemmadi/truecallerjs" alt="Stars" class="npm-image"></a>
-                    <a href="https://github.com/sumithemmadi/truecallerjs"><img src="https://img.shields.io/npm/dt/truecallerjs.svg" alt="weekly Download" class="npm-image"></a>
-                </p>
-                <br>
-                <p style="text-align: center;">A simple package to search phone number details.</p>
+            <div class="project-cards">
+                <img src="/images/projects/truecallerjs.PNG" alt="html logo" class="truecallerejs" />
+                <h3>Truecallerejs</h3>
             </div>
-            <div class="project-card">
-                <img src="/images/projects/truecallerjs.PNG" alt="truecallerjs" class="truecallerjs">
-                <h3>Truecallerjs</h3>
-                <p style="text-align: center; margin-top: 10px;">
-                    <a href="https://www.npmjs.com/package/truecallerjs"><img src="https://img.shields.io/npm/v/truecallerjs.svg" alt="Version" class="npm-image"></a>
-                    <a href="https://github.com/sumithemmadi/truecallerjs/stargazers"><img src="https://img.shields.io/github/stars/sumithemmadi/truecallerjs" alt="Stars" class="npm-image"></a>
-                    <a href="https://github.com/sumithemmadi/truecallerjs"><img src="https://img.shields.io/npm/dt/truecallerjs.svg" alt="weekly Download" class="npm-image"></a>
-                </p>
-                <br>
-                <p style="text-align: center;">A simple package to search phone number details.</p>
-            </div>
-            <div class="project-card">
-                <img src="/images/projects/truecallerjs.PNG" alt="truecallerjs" class="truecallerjs">
-                <h3>Truecallerjs</h3>
-                <p style="text-align: center; margin-top: 10px;">
-                    <a href="https://www.npmjs.com/package/truecallerjs"><img src="https://img.shields.io/npm/v/truecallerjs.svg" alt="Version" class="npm-image"></a>
-                    <a href="https://github.com/sumithemmadi/truecallerjs/stargazers"><img src="https://img.shields.io/github/stars/sumithemmadi/truecallerjs" alt="Stars" class="npm-image"></a>
-                    <a href="https://github.com/sumithemmadi/truecallerjs"><img src="https://img.shields.io/npm/dt/truecallerjs.svg" alt="weekly Download" class="npm-image"></a>
-                </p>
-                <br>
-                <p style="text-align: center;">A simple package to search phone number details.</p>
+            <div class="project-cards">
+                <img src="/images/projects/truecallerjs.PNG" alt="html logo" class="truecallerejs" />
+                <h3>Truecallerejs</h3>
             </div>
         </div>
     </section>
+    <section class="contact" id="contact">
+        <h2 style="text-align: center;">Get In Touch With Me</h2>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xyylngw" method="POST">
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea id="message" cols="50" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
+                    </div>
+                    <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+                </form>
+            </div>
+        </div>
     </section>
 </body>
 
