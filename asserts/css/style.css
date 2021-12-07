@@ -114,31 +114,111 @@ nav h1 {
 }
 
 .about {
-    display: flex;
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
     max-width: 68.75rem;
-    margin: auto;
+    margin: 50px auto 50px auto;
 }
 
-.about img {
-    height: 15.5rem;
-    width: 15.5rem;
+.bio img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10.5rem;
+    width: 10.5rem;
 }
 
 .bio {
-    width: 25rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
     padding: 0.625rem;
     border-radius: 6px;
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
 .bio h1 {
+    text-align: center;
     margin-bottom: var(--bottom-margin);
 }
 
 .bio p {
+    text-align: justify;
     line-height: var(--line-height);
     padding: 0.3rem 0;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: 50px auto 50px auto;
+}
+
+section h1 {
+    text-align: center;
+}
+
+.skills-card-group {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.skills-card {
+    display: block;
+    margin: 40px;
+    height: 250px;
+    width: 250px;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+.skills-card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    height: 10.5rem;
+    width: 10.5rem;
+}
+
+.skills-card p {
+    text-align: center;
+    margin: 20px auto 20px auto;
+}
+
+.project-card-group {
+    align-content: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    text-align: center;
+}
+
+.project-card {
+    display: block;
+    margin: 40px;
+    /* height: 300px; */
+    width: 400px;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    /* background-color: gray; */
+}
+
+.project-card .truecallerjs {
+    height: 15rem;
+    width: 23.6rem;
+    margin: 5px auto 5px auto;
+    border-radius: 6px;
+    box-shadow: 0px 1px 1px 1px var(--primary-shadow);
+}
+
+.project-card h3 {
+    text-align: center;
 }
