@@ -221,9 +221,10 @@ nav h1 {
     display: block;
     height: 20px;
     width: 360px;
-    background-color: gray;
+    background-color: rgb(63, 199, 240);
     margin: 5px auto 0px auto;
-    border-radius: 2px 2px 0px 0px;
+    font-weight: 15px;
+    border-radius: 3px 3px 0px 0px;
 }
 
 .terminal-circles {
@@ -284,25 +285,150 @@ nav h1 {
     font-weight: var(--bold-font);
 }
 
-.cmd {
+.print-line1 {
     color: white;
     /* display: block; */
     overflow: hidden;
     /* letter-spacing: 1px; */
     padding-left: 8px;
-    animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    opacity: 0;
+    -webkit-animation: print-line 1s;
+    animation: print-line 1s;
+    /* -webkit-animation: ; */
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
     white-space: nowrap;
-    font-size: 15px;
+    font-size: 14px;
+    font-family: monospace;
+    /* border-right: 4px solid black; */
+}
+
+.print-line2 {
+    color: white;
+    /* display: block; */
+    overflow: hidden;
+    /* letter-spacing: 1px; */
+    padding-left: 8px;
+    opacity: 0;
+    -webkit-animation: print-line 1s;
+    animation: print-line 1s;
+    /* -webkit-animation: ; */
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: monospace;
+    /* border-right: 4px solid black; */
+}
+
+.print-line3 {
+    color: white;
+    /* display: block; */
+    overflow: hidden;
+    /* letter-spacing: 1px; */
+    padding-left: 8px;
+    opacity: 0;
+    -webkit-animation: print-line 1s;
+    animation: print-line 1s;
+    /* -webkit-animation: ; */
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: monospace;
+    /* border-right: 4px solid black; */
+}
+
+.print-line4 {
+    color: white;
+    /* display: block; */
+    overflow: hidden;
+    /* letter-spacing: 1px; */
+    padding-left: 8px;
+    opacity: 0;
+    -webkit-animation: print-line 1s;
+    animation: print-line 1s;
+    /* -webkit-animation: ; */
+    -webkit-animation-delay: 7s;
+    animation-delay: 7s;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: monospace;
+    /* border-right: 4px solid black; */
+}
+
+.print-line5 {
+    color: white;
+    /* display: block; */
+    overflow: hidden;
+    /* letter-spacing: 1px; */
+    padding-left: 8px;
+    opacity: 0;
+    -webkit-animation: print-line 0.01s;
+    animation: print-line 1s;
+    /* -webkit-animation: ; */
+    -webkit-animation-delay: 13s;
+    animation-delay: 13s;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: monospace;
+    /* border-right: 4px solid black; */
+}
+
+@keyframes print-line {
+    from {
+        width: 0%;
+        opacity: 0;
+        /* color: black; */
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+        /* color: white; */
+    }
+}
+
+.cmd-line1 {
+    color: white;
+    overflow: hidden;
+    padding-left: 8px;
+    -webkit-animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    /* -webkit-animation-delay: 5s;
+    animation-delay: 5s; */
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: monospace;
+    /* border-right: 4px solid black; */
+}
+
+.cmd-line2 {
+    color: white;
+    /* display: block; */
+    overflow: hidden;
+    /* letter-spacing: 1px; */
+    opacity: 0;
+    padding-left: 8px;
+    -webkit-animation: typing 4s steps(30, end), blink .75s step-end infinite;
+    animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+    white-space: nowrap;
+    font-size: 14px;
     font-family: monospace;
     /* border-right: 4px solid black; */
 }
 
 @keyframes typing {
     from {
-        width: 0%
+        width: 0%;
+        color: black;
+        opacity: 1;
     }
     to {
-        width: 100%
+        width: 100%;
+        color: white;
+        opacity: 1;
     }
 }
 
