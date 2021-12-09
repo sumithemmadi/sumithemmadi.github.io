@@ -83,7 +83,7 @@
             </div>
         </div>
     </section>
-    <div class="projects">
+    <div class="projects" id="projects">
         <h2>Some of my Recent Projects</h2>
         <div class="project-cards">
             <div class="project-card">
@@ -103,9 +103,12 @@
                 </div>
                 <div class="terminal">
                     <p class="cmd-line1"><span style="color: green;">~</span><span style="color: white;">$</span> <span style="color: yellow;">npm</span> <span style="color: white;">install</span><span style="color: gray;"> -g </span><span style="color: white;">truecallerjs</span></p>
-                    <p class="print-line1">[..................] / idealTree:<span style="color: yellow;">npm</span>: <span style="background-color: white;color: black;">sill</span> <span style="color: magenta;">idealTree </span>buildDeps</p>
-                    <p class="print-line2">[#########.........] / idealTree:<span style="color: yellow;">npm</span>: <span style="color: magenta;">timing idealTree:#root</span> Completed in 1678ms</p>
-                    <p class="print-line3">[##################] \ reify:yargs:<span style="color: green;"> timing reifyNode:node_modules/truecallerjs/node_modules/axios</span> Completed in 352ms</p>
+                    <div class="npm-limes">
+                        <p class="print-line1">[..................] / idealTree:<span style="color: yellow;">npm</span>: <span style="background-color: white;color: black;">sill</span> <span style="color: magenta;">idealTree </span>buildDeps</p>
+                        <p class="print-line2">[#########.........] / idealTree:<span style="color: yellow;">npm</span>: <span style="color: magenta;">timing idealTree:#root</span> Completed in 1678ms</p>
+                        <p class="print-line3">[##################] \ reify:yargs:<span style="color: green;"> timing reifyNode:node_modules/truecallerjs/node_modules/axios</span> Completed in 352ms</p>
+
+                    </div>
                     <p class="print-line4"><span style="color: white;">changed 25 packages, and audited 26 packages in 5s</span><br><span style="color: white;">3 packages are looking for funding</span><br><span style="color: white;">run `npm fund` for details </span><br>
                         <span style="color: white;">found</span> <span style="color: green;">0</span> <span style="color: white;">vulnerabilities</span></p>
                     <p class="cmd-line2"><span style="color: green;">~</span><span style="color: white;">$ </span><span style="color: yellow;">truecallerjs</span><span style="color: gray;"> -s </span><span style="color: rgb(29, 175, 233);"> +919999999999 </span>
@@ -127,7 +130,9 @@
                 <br>
                 <br>
             </div>
-            <!-- <div class="project-card">
+        </div>
+        <div class="project-cards">
+            <div class="project-card">
                 <div class="terminal-head">
                     <div class="terminal-circles">
                         <div class="terminal-red-circle"></div>
@@ -139,21 +144,25 @@
                                 <div class="line-box"></div>
                                 <div class="line-box"></div>
                             </div>
-                            <p>json-to-plain-text@1.0.2 </p>
+                            <p>json-to-plain-text@1.0.2</p>
                     </div>
                 </div>
                 <div class="terminal">
-                    <p class="cmd"><span style="color: green;">~</span>$ <span style="color: yellow;">npm</span> install <span style="color: gray;"> --save </span>json-to-plain-text</p>
-                    <p class="cmd">[..................] / idealTree:<span style="color: yellow;">npm</span>: <span style="background-color: white;color: black;">sill</span> <span style="color: magenta;">idealTree </span>buildDeps</p>
-                    <p class="cmd">[#########.........] / idealTree:<span style="color: yellow;">npm</span>: <span style="color: magenta;">timing idealTree:#root</span> reify:json-to-plain-text: sill audit bulk request { 'json-to-plain-text': [ '1.0.2' ] }</p>
-                    <p class="cmd">[##################] \ reify:json-to-plain-text:<span style="color: green;"> timing reifyNode:node_modules/truecallerjs/node_modules/axios</span> Completed in 352ms</p>
-                    <p class="cmd">added 1 package, and audited 2 packages in 11s</p>
-                    <p class="cmd">found <span style="color: green;">0</span> vulnerabilities</p>
-                    <p class="cmd"><span style="color: green;">~</span>$ <span style="color: yellow;">node </span><span style="color: rgb(29, 175, 233);">node.js</span></p>
+                    <p class="cmd-line1"><span style="color: green;">~</span><span style="color: white;">$</span> <span style="color: yellow;">npm</span> <span style="color: white;">install</span><span style="color: white;"> json-to-plain-text</span><span style="color: gray;"> --save </span></p>
+                    <div class="npm-limes">
+                        <p class="print-line1">[..................] / idealTree:<span style="color: yellow;">npm</span>: <span style="background-color: white;color: black;">sill</span> <span style="color: magenta;">idealTree </span>buildDeps</p>
+                        <p class="print-line2">[#########.........] / idealTree:<span style="color: yellow;">npm</span>: <span style="color: magenta;">timing idealTree:#root</span> Completed in 1678ms</p>
+                        <p class="print-line3">[##################] \ reify:npm:<span style="color: green;"> timing reifyNode:node_modules/truecallerjs/node_modules/axios</span> Completed in 352ms</p>
+
+                    </div>
+                    <p class="print-line4"><span style="color: white;">changed 1 packages, and audited ,<br> 2 packages in 5s</span><br><span style="color: white;">
+                        <span style="color: white;">found</span> <span style="color: green;">0</span> <span style="color: white;">vulnerabilities</span></p>
+                    <p class="cmd-line2"><span style="color: green;">~</span><span style="color: white;">$ </span><span style="color: yellow;">node </span> <span style="color: rgb(29, 175, 233);"> app.js  </span>
+                    </p>
                     <span style="color: white;"></span>
-                    <p class="cmd"><span style="color: yellow;">Name</span>: <span style="color: green;"> Sumith Emmadi</span></p>
-                    <p class="cmd"><span style="color: yellow;">Age </span>: <span style="color: green;"> 20 years</span></p>
-                    <p class="cmd"><span style="color: yellow;">city</span>: <span style="color: green;"> Warangal</span></p>
+                    <p class="print-line5"><span style="color: yellow;">Name</span>: <span style="color: rgb(14, 236, 14);"> Sumith Emmadi</span></p>
+                    <p class="print-line5"><span style="color: yellow;">age</span> : <span style="color: rgb(14, 236, 14);"> 20 years</span></p>
+                    <p class="print-line5"><span style="color: yellow;">city</span>: <span style="color: rgb(14, 236, 14);"> Warangal</span></p>
 
                 </div>
                 <p style="text-align: center; margin-top: 10px;">
@@ -161,13 +170,13 @@
                     <a href="https://github.com/sumithemmadi/json-to-plain-text/stargazers"><img src="https://img.shields.io/github/stars/sumithemmadi/json-to-plain-text" alt="Stars" class="npm-image"></a>
                     <a href="https://github.com/sumithemmadi/json-to-plain-text"><img src="https://img.shields.io/npm/dt/json-to-plain-text.svg" alt="weekly Download" class="npm-image"></a>
                 </p>
-                <a href="https://www.npmjs.com/package/truecallerjs">
+                <a href="https://www.npmjs.com/package/json-to-plain-text">
                     <h3 style="text-align: center;">JSON-TO-PLAIN-TEXT</h3>
                 </a>
-                <p style="text-align: center;padding: 5px;">Convert any JSON to plain text.</p>
+                <p style="text-align: center;padding: 5px;">Convert any json to plain text </p>
                 <br>
                 <br>
-            </div> -->
+            </div>
         </div>
     </div>
 
@@ -186,7 +195,7 @@
                     </div>
                     <div class="form-control">
                         <label for="message">Message</label>
-                        <textarea id="message" cols="50" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
+                        <textarea id="message" cols="40" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
                     </div>
                     <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
                 </form>

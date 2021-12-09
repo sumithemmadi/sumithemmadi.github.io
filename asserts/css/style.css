@@ -285,6 +285,21 @@ nav h1 {
     font-weight: var(--bold-font);
 }
 
+.print-line {
+    color: white;
+    overflow: hidden;
+    padding-left: 8px;
+    opacity: 1;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: monospace;
+    /* border-right: 4px solid black; */
+}
+
+.npm-limes {
+    line-height: 20px;
+}
+
 .print-line1 {
     color: white;
     /* display: block; */
@@ -346,11 +361,12 @@ nav h1 {
     /* letter-spacing: 1px; */
     padding-left: 8px;
     opacity: 0;
-    -webkit-animation: print-line 1s;
-    animation: print-line 1s;
-    /* -webkit-animation: ; */
+    -webkit-animation-name: print-line;
+    animation-name: print-line 1s;
     -webkit-animation-delay: 7s;
     animation-delay: 7s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
     white-space: nowrap;
     font-size: 14px;
     font-family: monospace;
@@ -369,6 +385,8 @@ nav h1 {
     /* -webkit-animation: ; */
     -webkit-animation-delay: 13s;
     animation-delay: 13s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
     white-space: nowrap;
     font-size: 14px;
     font-family: monospace;
@@ -377,8 +395,8 @@ nav h1 {
 
 @keyframes print-line {
     from {
-        width: 0%;
-        opacity: 0;
+        width: 100%;
+        opacity: 1;
         /* color: black; */
     }
     to {
@@ -392,8 +410,8 @@ nav h1 {
     color: white;
     overflow: hidden;
     padding-left: 8px;
-    -webkit-animation: typing 5s steps(30, end), blink .75s step-end infinite;
-    animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    -webkit-animation: typing 2s steps(30, end), blink .75s step-end infinite;
+    animation: typing 2s steps(30, end), blink .75s step-end infinite;
     /*-webkit-animation-delay: 5s;
     animation-delay: 5s; */
     white-space: nowrap;
@@ -406,12 +424,17 @@ nav h1 {
     color: white;
     /* display: block; */
     overflow: hidden;
+    scroll-behavior: smooth;
     /* letter-spacing: 1px; */
+    opacity: 0;
     padding-left: 8px;
-    -webkit-animation: typing 4s steps(30, end), blink .75s step-end infinite;
-    animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    -webkit-animation: typing 2s steps(30, end), blink .75s step-end infinite;
+    animation: typing 2s steps(30, end), blink .75s step-end infinite;
     -webkit-animation-delay: 8s;
     animation-delay: 8s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite 5s;
     white-space: nowrap;
     font-size: 14px;
     font-family: monospace;
@@ -422,7 +445,7 @@ nav h1 {
     from {
         width: 0%;
         color: black;
-        opacity: 0;
+        opacity: 1;
     }
     to {
         width: 100%;
@@ -432,8 +455,12 @@ nav h1 {
 }
 
 @-webkit-keyframes typing {
-	from {opacity:0;}
-	to {opacity:1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes blink {
