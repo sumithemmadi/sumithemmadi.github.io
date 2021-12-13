@@ -140,7 +140,7 @@
         function callTruecallerjs() {
             if (i < command1.length) {
                 data += "<span style=\"color:" + cmd1Color(i) + ";\">" + command1.charAt(i) + "<span>";
-                document.getElementById("cmd1").innerHTML = data
+                document.getElementById("cmd1").innerHTML = data + '<span class="console-underscore" style="color: white">&#95;</span>'
                 i++;
                 setTimeout(callTruecallerjs, 100);
             } else if (i == command1.length) {
@@ -182,7 +182,7 @@
                 setTimeout(callTruecallerjs, 100);
             } else if (k < command2.length) {
                 data += "<span style=\"color:" + cmd2Color(k) + ";\">" + command2.charAt(k) + "<span>";
-                document.getElementById("cmd1").innerHTML = data;
+                document.getElementById("cmd1").innerHTML = data + '<span class="console-underscore" style="color: white">&#95;</span>';
                 k++;
                 setTimeout(callTruecallerjs, 100);
             } else {
@@ -225,28 +225,30 @@
         <h1 style="text-align: center;">Some of my Recent Projects</h1>
         <p id="element" style="margin-top:20px;"></p>
         <div class="projects-container">
-            <div class="projectsCard">
-                <div class="terminal">
-                    <div class="terminal-head">
-                        <p style="color: white;">nodejs > truecallerjs</p>
-                    </div>
-                    <p class="terminal-effect">
-                        <span id="cmd1" style="color: white;font-family: monospace;"> 
+            <a href="https://www.npmjs.com/package/truecallerjs">
+                <div class="projectsCard">
+                    <div class="terminal">
+                        <div class="terminal-head">
+                            <p style="color: white;">nodejs > truecallerjs</p>
+                        </div>
+                        <p class="terminal-effect">
+                            <span id="cmd1" style="color: white;font-family: monospace;"> 
                             <span class="loading-text"> Loading...</span>
-                        </span>
+                            </span>
+                        </p>
+                    </div>
+                    <p style="text-align: center; margin-top: 10px;">
+                        <a href="https://www.npmjs.com/package/truecallerjs"><img src="https://img.shields.io/npm/v/truecallerjs.svg" alt="Version" class="npm-image"></a>
+                        <a href="https://github.com/sumithemmadi/truecallerjs/stargazers"><img src="https://img.shields.io/github/stars/sumithemmadi/truecallerjs" alt="Stars" class="npm-image"></a>
+                        <a href="https://github.com/sumithemmadi/truecallerjs"><img src="https://img.shields.io/npm/dt/truecallerjs.svg" alt="weekly Download" class="npm-image"></a>
                     </p>
+                    <a href="https://www.npmjs.com/package/truecallerjs">
+                        <h3 style="text-align: center;">TruecallerJS</h3>
+                    </a>
+                    <p style="text-align: center;padding: 5px;">A simple package to search phone number details.</p>
+                    <br>
                 </div>
-                <p style="text-align: center; margin-top: 10px;">
-                    <a href="https://www.npmjs.com/package/truecallerjs"><img src="https://img.shields.io/npm/v/truecallerjs.svg" alt="Version" class="npm-image"></a>
-                    <a href="https://github.com/sumithemmadi/truecallerjs/stargazers"><img src="https://img.shields.io/github/stars/sumithemmadi/truecallerjs" alt="Stars" class="npm-image"></a>
-                    <a href="https://github.com/sumithemmadi/truecallerjs"><img src="https://img.shields.io/npm/dt/truecallerjs.svg" alt="weekly Download" class="npm-image"></a>
-                </p>
-                <a href="https://www.npmjs.com/package/truecallerjs">
-                    <h3 style="text-align: center;">TruecallerJS</h3>
-                </a>
-                <p style="text-align: center;padding: 5px;">A simple package to search phone number details.</p>
-                <br>
-            </div>
+            </a>
             <!-- <div class="projectsCard">
                 <div class="terminal">
                     <div class="terminal-head">
