@@ -220,6 +220,27 @@ nav h1 {
     overflow-x: hidden;
 }
 
+.loading-text {
+    font-family: monospace;
+    color: gray;
+    animation: animate 0.5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        font-weight: 0%;
+    }
+    50% {
+        opacity: 1;
+        font-weight: 100%;
+    }
+    100% {
+        opacity: 0;
+        font-weight: 0%;
+    }
+}
+
 .terminal {
     margin: 8px;
     border-radius: 3px;
@@ -243,6 +264,7 @@ nav h1 {
 
 .terminal-effect {
     font-size: 15px;
+    text-align: left;
 }
 
 .contact-form-container {
