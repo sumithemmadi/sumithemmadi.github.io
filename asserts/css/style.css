@@ -131,7 +131,7 @@ nav h1 {
 }
 
 .bio {
-    margin: 8px;
+    margin: 15px;
     border-radius: 6px;
     background: rgb(34, 193, 195);
     background-image: linear-gradient( 135deg, #FFF3B0 10%, #CA26FF 100%);
@@ -158,10 +158,14 @@ nav h1 {
     padding: 5px 30px 5px 30px;
 }
 
-.three-cards {
+.skills-cards {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.skills {
+    padding: 20px;
 }
 
 .skills h1 {
@@ -173,30 +177,25 @@ nav h1 {
 .skill-card {
     display: block;
     text-align: center;
-    margin: 20px auto 20px auto;
+    margin: 20px;
     height: 190px;
     width: 150px;
     border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px var(--secondary-shadow);
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
-.html-svg {
-    padding: 1rem;
-    text-align: center;
-    justify-content: center;
+.skill-card p {
+    padding: 5px;
 }
 
-.js-svg {
+.logo {
     padding: 1rem;
     height: 150px;
     width: 150px;
-    border-radius: 20px;
-}
-
-.nodejs-svg {
-    padding: 30px 10px 20px 10px;
     text-align: center;
     justify-content: center;
+    border-radius: 2px;
+    box-shadow: 0px 1px var(--primary-shadow)
 }
 
 .projects {
@@ -392,7 +391,8 @@ footer {
     background-image: linear-gradient( 135deg, #FFF3B0 10%, #CA26FF 100%);
 }
 
-@media (max-width: 1200px) {
+
+/* @media (max-width: 1200px) {
     .contact-form-container {
         display: block;
         margin: 5px;
@@ -421,22 +421,10 @@ footer {
     .terminal {
         display: none;
         visibility: hidden;
-        /* width: 700px;
-        height: 500px;
-        align-content: right;
-        border-radius: 0px 20px 20px 0px;
-        background-color: black;
-        overflow: hidden;
-        background-image: radial-gradient( circle 610px at 5.2% 51.6%, rgb(0, 0, 17) 0%, rgba(7, 3, 53, 1) 97.5%); */
     }
     .project-img {
         display: none;
         visibility: hidden;
-        /* width: 700px;
-        height: 500px;
-        align-content: right;
-        border-radius: 0px 20px 20px 0px;
-        overflow: hidden; */
     }
     .contact-form-container {
         display: block;
@@ -446,4 +434,4 @@ footer {
         margin: 5px;
         box-shadow: 0px 2px 15px 2px var(--secondary-shadow);
     }
-}
+} */
