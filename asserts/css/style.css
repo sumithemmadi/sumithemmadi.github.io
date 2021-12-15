@@ -392,12 +392,6 @@ footer {
     background-image: linear-gradient( 135deg, #FFF3B0 10%, #CA26FF 100%);
 }
 
-@media (max-width: 1200px) {
-    .contact-form {
-        width: 1200px;
-    }
-}
-
 @media (max-width: 420px) {
     .projectsCard {
         display: block;
@@ -433,5 +427,8 @@ footer {
         align-content: right;
         border-radius: 0px 20px 20px 0px;
         overflow: hidden; */
+    }
+    .contact-form-container {
+        margin: 10px;
     }
 }
