@@ -206,20 +206,46 @@ nav h1 {
 }
 
 .projects-container {
-    display: flex;
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
-    /* position: relative; */
 }
 
 .projectsCard {
-    width: 350px;
-    margin: 20px;
-    padding: 2px;
-    border-radius: 11px;
+    display: flex;
+    width: 1200px;
+    margin: 20px auto 20px auto;
+    border-radius: 20px;
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-    overflow-x: hidden;
+    cursor: pointer;
+}
+
+.project-details {
+    width: 700px;
+    font-size: 30px;
+    padding: auto 15px auto 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.project-details {
+    padding-top: 150px;
+    padding-left: 20px;
+}
+
+.project-btn {
+    padding: 10px;
+    background-color: rgb(247, 164, 115);
+    /* border: 1px solid; */
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+}
+
+.project-btn:hover {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: white;
     cursor: pointer;
 }
 
@@ -245,25 +271,42 @@ nav h1 {
 }
 
 .terminal {
-    margin: 8px;
-    border-radius: 3px;
-    height: 200px;
+    width: 700px;
+    height: 500px;
+    align-content: right;
+    border-radius: 0px 20px 20px 0px;
     background-color: black;
-    /* overflow: hidden; */
+    overflow: hidden;
     background-image: radial-gradient( circle 610px at 5.2% 51.6%, rgb(0, 0, 17) 0%, rgba(7, 3, 53, 1) 97.5%);
 }
 
 .terminal-head {
-    border-radius: 3px;
-    width: auto;
+    /* width: 0px 0px 0px 70px; */
+    height: auto;
     padding: 0px;
     height: 20px;
     background: rgb(31, 31, 96);
-    background: linear-gradient(50deg, rgba(31, 31, 96, 1) 55%, rgba(0, 212, 255, 1) 120%);
+    background: linear-gradient(50deg, rgba(31, 31, 96, 1) 55%, rgba(31, 31, 96, 1) 120%);
     font-size: 15px;
     font-family: monospace;
     text-align: center;
     justify-content: center;
+}
+
+.project-img {
+    width: 700px;
+    height: 500px;
+    align-content: right;
+    border-radius: 0px 20px 20px 0px;
+    overflow: hidden;
+}
+
+.project-img img {
+    width: 700px;
+    height: 500px;
+    align-content: right;
+    border-radius: 0px 20px 20px 0px;
+    overflow: hidden;
 }
 
 .terminal-effect {
@@ -286,11 +329,13 @@ nav h1 {
     display: block;
     margin: 5px;
     border-radius: 6px;
+    margin-left: 150px;
+    margin-right: 150px;
     box-shadow: 0px 2px 15px 2px var(--secondary-shadow);
 }
 
 .contact-form {
-    padding: 10px
+    padding: 10px;
 }
 
 .contact-form-container label {
@@ -345,4 +390,48 @@ footer {
     margin: 2rem 0 0;
     background: rgb(34, 193, 195);
     background-image: linear-gradient( 135deg, #FFF3B0 10%, #CA26FF 100%);
+}
+
+@media (max-width: 1200px) {
+    .contact-form {
+        width: 1200px;
+    }
+}
+
+@media (max-width: 420px) {
+    .projectsCard {
+        display: block;
+        width: auto;
+        height: 400px;
+        margin: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+        cursor: pointer;
+    }
+    .project-details {
+        width: auto;
+        font-size: 20px;
+        padding: auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .terminal {
+        display: none;
+        visibility: hidden;
+        /* width: 700px;
+        height: 500px;
+        align-content: right;
+        border-radius: 0px 20px 20px 0px;
+        background-color: black;
+        overflow: hidden;
+        background-image: radial-gradient( circle 610px at 5.2% 51.6%, rgb(0, 0, 17) 0%, rgba(7, 3, 53, 1) 97.5%); */
+    }
+    .project-img {
+        display: none;
+        visibility: hidden;
+        /* width: 700px;
+        height: 500px;
+        align-content: right;
+        border-radius: 0px 20px 20px 0px;
+        overflow: hidden; */
+    }
 }
