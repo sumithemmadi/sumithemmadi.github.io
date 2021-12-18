@@ -28,24 +28,26 @@
 <body>
     <script>
         function showMenu() {
-            document.getElementById("myMenu").style.width = "250px";
+            document.getElementById("myMenu").style.width = "95%";
         }
 
         function closeMenu() {
-            document.getElementById("myMenu").style.width = "0";
+            document.getElementById("myMenu").style.width = "0px";
         }
     </script>
     <nav>
         <h1>Sumith Emmadi</h1>
-        <div id="myMenu" class="nav-menu">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
-            <a href="#home">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">My Projects</a>
-            <a href="#contact">Contact Me</a>
+        <div class="navigator">
+            <div id="myMenu" class="nav-menu">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+                <a onclick="closeMenu()" href="#home">Home</a>
+                <a onclick="closeMenu()" href="#about">About Me</a>
+                <a onclick="closeMenu()" href="#skills">Skills</a>
+                <a onclick="closeMenu()" href="#projects">My Projects</a>
+                <a onclick="closeMenu()" href="#contact">Contact Me</a>
+            </div>
+            <span style="font-size:20px;cursor:pointer" onclick="showMenu()">&#9776; Menu</span>
         </div>
-        <span style="font-size:20px;cursor:pointer" onclick="showMenu()">&#9776; Menu</span>
     </nav>
     <div class="home-background">
     </div>
