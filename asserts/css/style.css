@@ -130,6 +130,12 @@ nav h1 {
     }
 }
 
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .bio {
     margin: 15px;
     border-radius: 6px;
@@ -177,11 +183,12 @@ nav h1 {
 .skill-card {
     display: block;
     text-align: center;
-    margin: 20px;
+    margin: 15px;
     height: 190px;
     width: 150px;
     border-radius: 6px;
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    overflow: hidden;
 }
 
 .grid4 {
@@ -192,34 +199,8 @@ nav h1 {
     display: flex;
 }
 
-@media screen and (max-width: 500px) {
-    .grid4 {
-        display: block;
-    }
-    .grid2 {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .grid4 {
-        display: flex;
-    }
-    .grid2 {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .grid4 {
-        display: flex;
-    }
-    .grid2 {
-        display: block;
-    }
-}
-
 .logo {
+    position: relative;
     padding: 1rem;
     height: 150px;
     width: 150px;
@@ -227,6 +208,69 @@ nav h1 {
     justify-content: center;
     border-radius: 2px;
     box-shadow: 0px 1px var(--primary-shadow)
+}
+
+@media screen and (max-width: 1450px) {
+    .skill-card {
+        display: block;
+        text-align: center;
+        margin: 20px;
+        height: 190px;
+        width: 150px;
+        border-radius: 6px;
+        box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    }
+    .grid4 {
+        display: block;
+    }
+    .grid2 {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .skill-card {
+        display: block;
+        text-align: center;
+        margin: 20px;
+        height: 190px;
+        width: 150px;
+        border-radius: 6px;
+        box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    }
+    .grid4 {
+        display: block;
+    }
+    .grid2 {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .skill-card {
+        display: block;
+        text-align: center;
+        margin: 20px;
+        height: 130px;
+        width: 100px;
+        border-radius: 6px;
+        box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    }
+    .logo {
+        padding: 1rem;
+        height: 100px;
+        width: 100px;
+        text-align: center;
+        justify-content: center;
+        border-radius: 2px;
+        box-shadow: 0px 1px var(--primary-shadow)
+    }
+    .grid4 {
+        display: block;
+    }
+    .grid2 {
+        display: block;
+    }
 }
 
 .projects {
@@ -253,13 +297,14 @@ nav h1 {
 .project-details {
     width: 700px;
     font-size: 30px;
+    margin-top: 150px;
+    margin-left: 20px;
     padding: auto 15px auto 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.project-details {
-    padding-top: 150px;
-    padding-left: 20px;
+.project-details-bottom {
+    display: none;
 }
 
 .project-btn {
@@ -305,6 +350,8 @@ nav h1 {
     height: 500px;
     align-content: right;
     border-radius: 0px 20px 20px 0px;
+    font-family: monospace;
+    font-size: 15px;
     background-color: black;
     overflow: hidden;
     background-image: radial-gradient( circle 610px at 5.2% 51.6%, rgb(0, 0, 17) 0%, rgba(7, 3, 53, 1) 97.5%);
@@ -355,12 +402,235 @@ nav h1 {
     height: 5px;
 }
 
+@media screen and (max-width: 1250px) {
+    .projectsCard {
+        width: 900px;
+    }
+    .terminal {
+        height: 400px;
+    }
+    .project-details {
+        margin-top: 90px;
+    }
+    .project-img img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .projectsCard {
+        width: 700px;
+    }
+    .project-details {
+        margin-top: 95px;
+        font-size: 23px;
+    }
+    .project-img img {
+        width: 100%;
+        /* height: 100%; */
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .projectsCard {
+        display: grid;
+        width: 400px;
+    }
+    .project-details {
+        display: none;
+        margin-top: 90px;
+    }
+    .terminal {
+        width: auto;
+        height: 250px;
+        align-content: center;
+        border-radius: 5px;
+        margin: 15px;
+        background-color: black;
+        overflow: hidden;
+        background-image: radial-gradient( circle 610px at 5.2% 51.6%, rgb(0, 0, 17) 0%, rgba(7, 3, 53, 1) 97.5%);
+    }
+    .project-details-bottom {
+        display: grid;
+        font-size: 17px;
+        text-align: center;
+        margin: 15px;
+        padding: auto 15px auto 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .project-img {
+        width: 380px;
+        height: 250px;
+        align-content: center;
+        overflow: hidden;
+        border-radius: 5px;
+        /* margin: 15px; */
+    }
+    .project-img img {
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        margin: 15px;
+        border-radius: 5px;
+    }
+    .project-btn {
+        padding: 10px;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .projectsCard {
+        display: grid;
+        width: 380px;
+    }
+    .project-details {
+        display: none;
+        margin-top: 90px;
+    }
+    .terminal {
+        width: auto;
+        height: 250px;
+        align-content: center;
+        border-radius: 5px;
+        margin: 15px;
+        background-color: black;
+        overflow: hidden;
+        background-image: radial-gradient( circle 610px at 5.2% 51.6%, rgb(0, 0, 17) 0%, rgba(7, 3, 53, 1) 97.5%);
+    }
+    .project-details-bottom {
+        display: grid;
+        font-size: 17px;
+        text-align: center;
+        margin: 15px;
+        padding: auto 15px auto 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .project-img {
+        width: 365px;
+        height: 250px;
+        align-content: center;
+        overflow: hidden;
+        border-radius: 5px;
+        /* margin: 15px; */
+    }
+    .project-img img {
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        margin: 15px;
+        border-radius: 5px;
+    }
+    .project-btn {
+        padding: 10px;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .projectsCard {
+        display: grid;
+        width: 360px;
+    }
+    .project-details {
+        display: none;
+        margin-top: 90px;
+    }
+    .terminal {
+        width: auto;
+        height: 250px;
+        align-content: center;
+        border-radius: 5px;
+        margin: 15px;
+        background-color: black;
+        overflow: hidden;
+        background-image: radial-gradient( circle 610px at 5.2% 51.6%, rgb(0, 0, 17) 0%, rgba(7, 3, 53, 1) 97.5%);
+    }
+    .project-details-bottom {
+        display: grid;
+        font-size: 17px;
+        text-align: center;
+        margin: 15px;
+        padding: auto 15px auto 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .project-img {
+        width: 345px;
+        height: 250px;
+        align-content: center;
+        overflow: hidden;
+        border-radius: 5px;
+        /* margin: 15px; */
+    }
+    .project-img img {
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        margin: 15px;
+        border-radius: 5px;
+    }
+    .project-btn {
+        padding: 10px;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .projectsCard {
+        display: grid;
+        width: 270px;
+    }
+    .project-details {
+        display: none;
+        margin-top: 90px;
+    }
+    .terminal {
+        display: none;
+        width: auto;
+        height: 250px;
+        align-content: center;
+        border-radius: 5px;
+        margin: 15px;
+        background-color: black;
+        overflow: hidden;
+        background-image: radial-gradient( circle 610px at 5.2% 51.6%, rgb(0, 0, 17) 0%, rgba(7, 3, 53, 1) 97.5%);
+    }
+    .project-details-bottom {
+        display: grid;
+        font-size: 17px;
+        text-align: center;
+        margin: 15px;
+        padding: auto 15px auto 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .project-img {
+        display: none;
+        width: 365px;
+        height: 250px;
+        align-content: center;
+        overflow: hidden;
+        border-radius: 5px;
+        /* margin: 15px; */
+    }
+    .project-btn {
+        padding: 10px;
+        margin: 15px;
+    }
+}
+
+.contact-form-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .contact-form-container {
     display: block;
+    width: 1200px;
     margin: 5px;
     border-radius: 6px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin: 10px;
     box-shadow: 0px 2px 15px 2px var(--secondary-shadow);
 }
 
@@ -422,41 +692,37 @@ footer {
     background-image: linear-gradient( 135deg, #FFF3B0 10%, #CA26FF 100%);
 }
 
-
-/* @media (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
     .contact-form-container {
         display: block;
         margin: 5px;
         border-radius: 6px;
-        width: 1300px;
+        width: 900px;
         box-shadow: 0px 2px 15px 2px var(--secondary-shadow);
     }
 }
 
-@media (max-width: 500px) {
-    .projectsCard {
+@media screen and (max-width: 920px) {
+    .contact-form-container {
         display: block;
-        width: auto;
-        height: 400px;
-        margin: 20px;
-        border-radius: 20px;
-        box-shadow: 0px 2px 15px 2px var(--primary-shadow);
-        cursor: pointer;
+        margin: 5px;
+        border-radius: 6px;
+        width: 700px;
+        box-shadow: 0px 2px 15px 2px var(--secondary-shadow);
     }
-    .project-details {
-        width: auto;
-        font-size: 20px;
-        padding: auto;
-        font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 720px) {
+    .contact-form-container {
+        display: block;
+        margin: 5px;
+        border-radius: 6px;
+        width: 400px;
+        box-shadow: 0px 2px 15px 2px var(--secondary-shadow);
     }
-    .terminal {
-        display: none;
-        visibility: hidden;
-    }
-    .project-img {
-        display: none;
-        visibility: hidden;
-    }
+}
+
+@media screen and (max-width: 500px) {
     .contact-form-container {
         display: block;
         width: auto;
@@ -465,4 +731,4 @@ footer {
         margin: 5px;
         box-shadow: 0px 2px 15px 2px var(--secondary-shadow);
     }
-} */
+}
