@@ -29,28 +29,37 @@
     <script>
         function showMenu() {
             document.getElementById("myMenu").style.width = "95%";
+            document.getElementById("myMenu").style.height = "auto";
+            document.getElementById("myMenu").style.boxShadow = "0px 2px 15px 2px #8b8eaf"
         }
 
         function closeMenu() {
             document.getElementById("myMenu").style.width = "0px";
+            document.getElementById("myMenu").style.height = "0px";
+            document.getElementById("myMenu").style.boxShadow = "0px 0px"
+
         }
     </script>
-    <nav>
-        <h1>Sumith Emmadi</h1>
-        <div class="navigator">
-            <div id="myMenu" class="nav-menu">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
-                <a href="#home">Home</a>
-                <a href="#about">About Me</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">My Projects</a>
-                <a href="#contact">Contact Me</a>
+    <div class="home-background" id="home">
+        <nav>
+            <h1>Sumith Emmadi</h1>
+            <div class="navigator">
+                <div id="myMenu" class="nav-menu">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+                    <a href="#home">🏡 Home</a>
+                    <a href="#about">⭐ About Me</a>
+                    <a href="#skills">🌱 Skills</a>
+                    <a href="#projects">🔭 My Projects</a>
+                    <a href="#contact">📫 Contact Me</a>
+                </div>
+                <div class="menuBar">
+                    <span onclick="showMenu()" class="menuBtn">&#9776;</span>
+                </div>
             </div>
-            <span onclick="showMenu()" class="menuBtn">&#9776;</span>
-        </div>
-    </nav>
-    <div class="home-background">
+        </nav>
+        <div class="home-box"></div>
     </div>
+
     <section class="about" id="about">
         <div class="bio">
             <h1>About Me</h1>

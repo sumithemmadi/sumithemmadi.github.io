@@ -50,12 +50,11 @@ nav {
     top: 0;
     left: 0;
     z-index: 1;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 3.5rem;
-    background-color: var(--bg-color);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    padding: 2.25rem 2.45rem;
 }
 
 nav h1 {
@@ -79,7 +78,7 @@ nav h1 {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
     overflow-x: hidden;
     transition: 0.5s;
     /* padding-top: 60px; */
@@ -127,8 +126,8 @@ nav h1 {
 @media screen and (max-width: 880px) {
     .nav-menu {
         display: block;
-        height: 97%;
-        width: 0;
+        height: 0px;
+        width: 0px;
         position: fixed;
         z-index: 1;
         top: 0;
@@ -137,6 +136,7 @@ nav h1 {
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
+        padding-bottom: 60px;
         margin: 10px;
         border-radius: 10px
     }
@@ -149,15 +149,34 @@ nav h1 {
     .nav-menu .closebtn {
         display: block;
     }
+    .menuBar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5px 12px 1px 12px;
+        size: 1px;
+        border-radius: 15px;
+        background-color: rgba(0, 0, 0, 0.12);
+    }
 }
 
 .home-background {
-    /* background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%); */
     background: linear-gradient(50deg, rgba(2, 245, 255, 1), rgba(255, 94, 247, 1), #e25f13);
     background-size: 200% 200%;
     animation: GradientBackground 5s ease infinite;
     height: 850px;
-    /* transform-box: 45deg; */
+    /* transform-origin: bottom;
+    transform: rotate(-45deg); */
+}
+
+.home-box {
+    background-image: linear-gradient( 135deg, #69FF97 10%, #00E4FF 100%);
+    animation: GradientBackground 5s ease infinite;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    transform-origin: bottom;
+    transform: rotate(-50deg);
 }
 
 @keyframes GradientBackground {
