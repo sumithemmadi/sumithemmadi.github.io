@@ -14,37 +14,38 @@
     --bottom-margin: 0.5rem;
     --bottom-margin-2: 1rem;
     --line-height: 1.7rem;
-    --transition: 0.3s;
+    --transition: 0.3s
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: none
 }
 
 a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--primary-color)
 }
 
 a:hover {
-    color: var(--secondary-color);
+    color: var(--secondary-color)
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: var(--font-family)
 }
 
 nav {
+    display: flex;
     position: relative;
     top: 0;
     left: 0;
@@ -58,38 +59,41 @@ nav {
 }
 
 nav h1 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster', cursive
 }
 
 .container {
     display: inline-block;
-    cursor: pointer;
+    cursor: pointer
 }
 
-.navigator {}
+.navigator {
+    display: flex;
+}
 
 .nav-menu {
-    height: 98%;
-    width: 0;
-    position: fixed;
+    display: flex;
+    /* height: 97%; */
+    width: auto;
+    /* position: fixed; */
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #b7e1ee;
+    background-color: var(--bg-color);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
-    margin: 10px 20px 20px 10px;
-    border-radius: 10px;
+    /* padding-top: 60px; */
+    margin: 10px;
+    border-radius: 10px
 }
 
 .nav-menu a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
-    color: #818181;
+    color: #3f3c3c;
     display: block;
-    transition: 0.3s;
+    transition: 0.3s
 }
 
 .nav-menu a:hover {
@@ -97,11 +101,18 @@ nav h1 {
 }
 
 .nav-menu .closebtn {
+    display: none;
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
-    margin-left: 50px;
+    margin-left: 50px
+}
+
+.menuBtn {
+    display: none;
+    font-size: 20px;
+    cursor: pointer
 }
 
 @media screen and (max-height: 450px) {
@@ -110,6 +121,33 @@ nav h1 {
     }
     .nav-menu a {
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .nav-menu {
+        display: block;
+        height: 97%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: var(--bg-color);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        margin: 10px;
+        border-radius: 10px
+    }
+    .nav-menu a {
+        font-size: 18px;
+    }
+    .menuBtn {
+        display: block;
+    }
+    .nav-menu .closebtn {
+        display: block;
     }
 }
 

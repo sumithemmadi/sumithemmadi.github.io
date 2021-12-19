@@ -40,13 +40,13 @@
         <div class="navigator">
             <div id="myMenu" class="nav-menu">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
-                <a onclick="closeMenu()" href="#home">Home</a>
-                <a onclick="closeMenu()" href="#about">About Me</a>
-                <a onclick="closeMenu()" href="#skills">Skills</a>
-                <a onclick="closeMenu()" href="#projects">My Projects</a>
-                <a onclick="closeMenu()" href="#contact">Contact Me</a>
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">My Projects</a>
+                <a href="#contact">Contact Me</a>
             </div>
-            <span style="font-size:20px;cursor:pointer" onclick="showMenu()">&#9776; Menu</span>
+            <span onclick="showMenu()" class="menuBtn">&#9776;</span>
         </div>
     </nav>
     <div class="home-background">
@@ -467,7 +467,7 @@
         <div class="contact-form-card">
             <div class="contact-form-container">
                 <div class="contact-form">
-                    <form action="/" method="POST">
+                    <form action="/post.php" method="POST">
                         <div class="form-control">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required />
