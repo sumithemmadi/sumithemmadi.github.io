@@ -618,16 +618,38 @@ nav h1 {
 }
 
 .contact-form-container {
-    display: block;
-    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
     margin: 5px;
     border-radius: 6px;
     margin: 10px;
     box-shadow: 0px 2px 15px 2px var(--secondary-shadow);
 }
 
+.contact-seperator {
+    width: 10px;
+    bottom: 1px solid gray;
+    background-color: gray;
+}
+
+.contact-my-details {
+    padding: 15px;
+    margin: 25px;
+}
+
+.contact-my-details img {
+    width: 50%;
+}
+
 .contact-form {
     padding: 10px;
+    margin: 25px;
+}
+
+.my-details {
+    margin-top: 5%;
 }
 
 .contact-form-container label {
@@ -649,7 +671,7 @@ nav h1 {
     padding-left: 15px;
     border-radius: 20px;
     border: none;
-    border: 1.5px outset black;
+    border: 1.6px solid black;
     font-size: 0.875rem;
     outline: none;
 }
@@ -665,7 +687,7 @@ nav h1 {
     padding: 10px;
     margin: 10px 0;
     background-color: #fff;
-    border: 1px solid var(--primary-color);
+    border: 1.5px solid var(--primary-color);
     border-radius: 20px;
     font-size: 1rem;
     font-weight: var(--bold-font);
@@ -674,7 +696,7 @@ nav h1 {
 
 .submit-btn:hover {
     background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);
+    border: 1.5px solid var(--primary-color);
     color: white;
     cursor: pointer;
 }
