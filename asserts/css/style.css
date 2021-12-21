@@ -570,7 +570,7 @@ nav h1 {
         font-family: Arial, Helvetica, sans-serif;
     }
     .project-img {
-        width: 365px;
+        width: auto;
         height: 250px;
         align-content: center;
         overflow: hidden;
@@ -578,7 +578,7 @@ nav h1 {
         /* margin: 15px; */
     }
     .project-img img {
-        width: 100%;
+        width: 91%;
         height: 100%;
         align-content: center;
         margin: 15px;
@@ -621,12 +621,6 @@ nav h1 {
     }
     .project-img {
         display: none;
-        width: 365px;
-        height: 250px;
-        align-content: center;
-        overflow: hidden;
-        border-radius: 5px;
-        /* margin: 15px; */
     }
     .project-btn {
         padding: 10px;
