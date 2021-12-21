@@ -249,7 +249,7 @@ nav h1 {
 }
 
 .skills-cards {
-    display: block;
+    display: grid;
     align-items: center;
     justify-content: center;
 }
