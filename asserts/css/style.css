@@ -629,7 +629,8 @@ nav h1 {
 }
 
 .contact-seperator {
-    width: 10px;
+    width: 1px;
+    height: 500px;
     bottom: 1px solid gray;
     background-color: gray;
 }
