@@ -58,8 +58,9 @@ nav {
     padding: 2.25rem 2.45rem;
 }
 
-nav h1 {
+.home-background nav h1 {
     font-family: 'Playball', cursive;
+    font-size: 40px;
 }
 
 .container {
@@ -109,22 +110,17 @@ nav h1 {
     margin-left: 50px
 }
 
+.menu-logos {
+    display: none;
+}
+
 .menuBtn {
     display: none;
     font-size: 20px;
     cursor: pointer
 }
 
-@media screen and (max-height: 450px) {
-    .nav-menu {
-        padding-top: 15px;
-    }
-    .nav-menu a {
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 930px) {
     .nav-menu {
         display: block;
         height: 0px;
@@ -158,6 +154,25 @@ nav h1 {
         size: 1px;
         border-radius: 15px;
         background-color: rgba(0, 0, 0, 0.12);
+    }
+    .menu-logos {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .nav-menu {
+        padding-top: 15px;
+    }
+    .nav-menu a {
+        font-size: 18px;
+    }
+    .menu-logos {
+        display: inline;
+    }
+    .home-background nav h1 {
+        font-family: 'Playball', cursive;
+        font-size: 30px;
     }
 }
 
@@ -640,8 +655,9 @@ nav h1 {
     margin: 25px;
 }
 
-.contact-my-details img {
-    width: 50%;
+.myprofile-img {
+    width: 200px;
+    height: 200px
 }
 
 .contact-form {
@@ -670,11 +686,42 @@ nav h1 {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
+    padding-right: 15px;
     border-radius: 20px;
     border: none;
     border: 1.6px solid black;
     font-size: 0.875rem;
     outline: none;
+}
+
+.follow-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2.5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+    background-color: gray;
+    color: black;
+    border-radius: 5px;
+}
+
+.follow-btn:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2.5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+    background-color: gray;
+    color: black;
+    border-radius: 5px;
 }
 
 .input-field::placeholder {
@@ -710,43 +757,18 @@ footer {
     background-image: linear-gradient( 135deg, #FFF3B0 10%, #CA26FF 100%);
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 700px) {
     .contact-form-container {
-        display: block;
-        margin: 5px;
-        border-radius: 6px;
-        width: 900px;
-        box-shadow: 0px 2px 15px 2px var(--secondary-shadow);
-    }
-}
-
-@media screen and (max-width: 920px) {
-    .contact-form-container {
-        display: block;
-        margin: 5px;
-        border-radius: 6px;
-        width: 700px;
-        box-shadow: 0px 2px 15px 2px var(--secondary-shadow);
-    }
-}
-
-@media screen and (max-width: 720px) {
-    .contact-form-container {
-        display: block;
+        display: flex;
         margin: 5px;
         border-radius: 6px;
         width: 400px;
         box-shadow: 0px 2px 15px 2px var(--secondary-shadow);
     }
-}
-
-@media screen and (max-width: 500px) {
-    .contact-form-container {
-        display: block;
-        width: auto;
-        margin: 5px;
-        border-radius: 6px;
-        margin: 5px;
-        box-shadow: 0px 2px 15px 2px var(--secondary-shadow);
+    .contact-my-details {
+        display: none;
+    }
+    .contact-seperator {
+        display: none;
     }
 }

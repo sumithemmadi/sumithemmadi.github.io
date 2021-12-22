@@ -37,7 +37,7 @@
             document.getElementById("myMenu").style.width = "0px";
             document.getElementById("myMenu").style.height = "0px";
             document.getElementById("myMenu").style.boxShadow = "0px 0px"
-
+                // document.getElementById("myMenu") = "0px 0px"
         }
     </script>
     <div class="home-background" id="home">
@@ -46,11 +46,11 @@
             <div class="navigator">
                 <div id="myMenu" class="nav-menu">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
-                    <a href="#home">🏡 Home</a>
-                    <a href="#about">⭐ About Me</a>
-                    <a href="#skills">🌱 Skills</a>
-                    <a href="#projects">🔭 My Projects</a>
-                    <a href="#contact">📫 Contact Me</a>
+                    <a href="#home"><span class="menu-logos">🏡</span> Home</a>
+                    <a href="#about"><span class="menu-logos">⭐</span> About Me</a>
+                    <a href="#skills"><span class="menu-logos">🌱</span> Skills</a>
+                    <a href="#projects"><span class="menu-logos">🔭</span> My Projects</a>
+                    <a href="#contact"><span class="menu-logos">📫</span> Contact Me</a>
                 </div>
                 <div class="menuBar">
                     <span onclick="showMenu()" class="menuBtn">&#9776;</span>
@@ -523,6 +523,37 @@
                         project</a>
                 </div>
             </div>
+            <div class="projectsCard">
+                <div class="project-details">
+                    <a href="https://github.com/sumithemmadi/Ruby-Hidden-Service">
+                        <h3>Ruby Hidden Service</h3>
+                    </a>
+                    <p>
+                        <a href="https://github.com/sumithemmadi/Ruby-Hidden-Service"><img src="https://img.shields.io/badge/Version-1.0.3-blue" alt="Version"></a>
+                        <a href="https://github.com/sumithemmadi/Ruby-Hidden-Service/stargazers"><img src="https://img.shields.io/github/stars/sumithemmadi/Ruby-Hidden-Service" alt="Stars"></a>
+                        <a href="https://github.com/sumithemmadi/Ruby-Hidden-Service/blob/main/LICENSE"><img src="https://img.shields.io/github/license/sumithemmadi/Ruby-Hidden-Service" alt="License"></a>
+                    </p>
+                    <p>Host a website in dark web with heroku</p><br>
+                    <a href="https://github.com/sumithemmadi/Ruby-Hidden-Service" class="project-btn">Go to
+                        project</a>
+                </div>
+                <div class="project-img">
+                    <img src="/images/projects/ruby-hidden-service.PNG">
+                </div>
+                <div class="project-details-bottom">
+                    <a href="https://github.com/sumithemmadi/Ruby-Hidden-Service">
+                        <h3>Ruby Hidden Service</h3>
+                    </a>
+                    <p>
+                        <a href="https://github.com/sumithemmadi/Ruby-Hidden-Service"><img src="https://img.shields.io/badge/Version-1.0.3-blue" alt="Version"></a>
+                        <a href="https://github.com/sumithemmadi/Ruby-Hidden-Service/stargazers"><img src="https://img.shields.io/github/stars/sumithemmadi/Ruby-Hidden-Service" alt="Stars"></a>
+                        <a href="https://github.com/sumithemmadi/Ruby-Hidden-Service/blob/main/LICENSE"><img src="https://img.shields.io/github/license/sumithemmadi/Ruby-Hidden-Service" alt="License"></a>
+                    </p>
+                    <p>Host a website in dark web with heroku</p><br>
+                    <a href="https://github.com/sumithemmadi/Ruby-Hidden-Service" class="project-btn">Go to
+                        project</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -531,10 +562,12 @@
         <div class="contact-form-card">
             <div class="contact-form-container">
                 <div class="contact-my-details">
-                    <img src="/images/round-profile.png" />
+                    <img src="/images/round-profile.png" class="myprofile-img" />
                     <h1>Emmadi Sumith Kumar</h1>
                     <!-- <h3>sumithemmadi</h3> -->
-                    <a class="follow-btn" href="/">Follow me on github</a>
+                    <div class="follow-btn">
+                        <a href="/">Follow me on github</a>
+                    </div>
                     <div class="mb-3">
                         <a href="https://github.com/sumithemmadi?tab=followers">
                             <svg text="muted" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true">
@@ -542,10 +575,10 @@
                                     d="M5.5 3.5a2 2 0 100 4 2 2 0 000-4zM2 5.5a3.5 3.5 0 115.898 2.549 5.507 5.507 0 013.034 4.084.75.75 0 11-1.482.235 4.001 4.001 0 00-7.9 0 .75.75 0 01-1.482-.236A5.507 5.507 0 013.102 8.05 3.49 3.49 0 012 5.5zM11 4a.75.75 0 100 1.5 1.5 1.5 0 01.666 2.844.75.75 0 00-.416.672v.352a.75.75 0 00.574.73c1.2.289 2.162 1.2 2.522 2.372a.75.75 0 101.434-.44 5.01 5.01 0 00-2.56-3.012A3 3 0 0011 4z">
                                 </path>
                             </svg>
-                            <span class="followers">18</span> followers
+                            <span id="followers"></span> followers
                         </a> ·
                         <a href="https://github.com/sumithemmadi?tab=following">
-                            <span class="following">9</span> following
+                            <span id="following"></span> following
                         </a><br>
                         <a href="https://github.com/sumithemmadi?tab=stars">
                             <svg text="muted" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true">
@@ -553,11 +586,11 @@
                                     d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z">
                                 </path>
                             </svg>
-                            <span class="starred-repos">23 stargazers</span>
+                            <span id="total_stargazers_count"></span> stars earned
                         </a><br>
                         <a href="https://github.com/sumithemmadi?tab=repositories">
                             <img style="width: 16px;" src="/images/icons/github-icon-1.svg" />
-                            <span class="total-repos">15 repos</span>
+                            <span id="total-repos"></span> repos
                         </a>
                         <div class="my-details">
                             <ul>
@@ -567,7 +600,7 @@
                                             d="M11.536 3.464a5 5 0 010 7.072L8 14.07l-3.536-3.535a5 5 0 117.072-7.072v.001zm1.06 8.132a6.5 6.5 0 10-9.192 0l3.535 3.536a1.5 1.5 0 002.122 0l3.535-3.536zM8 9a2 2 0 100-4 2 2 0 000 4z">
                                         </path>
                                     </svg>
-                                    <a href="https://github.com/sumithemmadi">warangal</a>
+                                    <a href="https://en.wikipedia.org/wiki/Warangal">warangal</a>
                                 </li>
 
                                 <li>
@@ -576,7 +609,7 @@
                                             d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z">
                                         </path>
                                     </svg>
-                                    <a href="https://github.com/sumithemmadi">sumithemmadi.github.io</a>
+                                    <a href="sumithemmadi.github.io">sumithemmadi.github.io</a>
                                 </li>
                                 <li>
                                     <svg style="width: 16px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273.5 222.3" role="img" aria-labelledby="bhryjyngr2t6i4i4carlsogpjo30n8l">
@@ -613,6 +646,8 @@
             </div>
         </div>
     </section>
+    <script src="/asserts/js/github/githubUser.js"></script>
+    <script src="/asserts/js/github/stargazers.js"></script>
     <footer>
         <p class="copy">&copy; Copyright 2021</p>
         <p class="copy">
