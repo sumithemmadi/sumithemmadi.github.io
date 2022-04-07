@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: sumithemmadi.github.io
+Token: 8d8f41eaaeb6ce9c52e4b534b2884f084e7ecf1fa17ac3e590d61f79b09554fa
