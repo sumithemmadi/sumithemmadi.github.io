@@ -167,9 +167,8 @@ nav ul li {
     width: 80px;
 }
 
-.card:hover {
-    transform: scale(1);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+.bio-social-account img:hover {
+    width: 90px;
 }
 
 
