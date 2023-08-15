@@ -132,12 +132,6 @@ const skillsData = [
     category: 'Version Control',
     imgUrl: '/assets/icons/pl/git.svg',
   },
-  {
-    id: 20,
-    name: 'VS Code',
-    category: 'Tools',
-    imgUrl: '/assets/icons/pl/vscode.svg',
-  },
 ];
 
 
