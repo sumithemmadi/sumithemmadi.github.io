@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/sumithemmadi
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://sumithemmadi.live
+  * I am sumithemmadi (https://keybase.io/sumithemmadi) on keybase.
+  * I have a public key ASC9s1im0vHHHaf8GoVLoKqiTSSYyCEZxOoowSIr9utC0go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101c64b03ec34432808413c0b2e6e6e38d735de549f00f3aefc3731871da9e461970a",
+      "host": "keybase.io",
+      "kid": "0120bdb358a6d2f1c71da7fc1a854ba0aaa24d2498c82119c4ea28c1222bf6eb42d20a",
+      "uid": "3f5728cd5027aa05866e9b41415b6519",
+      "username": "sumithemmadi"
+    },
+    "merkle_root": {
+      "ctime": 1695465022,
+      "hash": "f92baac91705003edc6fa92ab59fa2e7601c531d821b0d0a4fe372e41a2b31d7f5e0763b1076695cc710a064089b49b76da76b66ea7f8f98431db968f040427f",
+      "hash_meta": "4e6aa79553cb2e1bb2666792022609ca6a574977e7c112e519d1e29ecd6b4154",
+      "seqno": 24951415
+    },
+    "service": {
+      "entropy": "JtklezolNWlPyD87yfnGooMZ",
+      "hostname": "sumithemmadi.live",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.2.2"
+  },
+  "ctime": 1695465058,
+  "expire_in": 504576000,
+  "prev": "3334227a9f2fcc8b35ce1aa19cf5b1892f34f57006a43b6bb87a96d368aeac80",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgvbNYptLxxx2n/BqFS6Cqok0kmMghGcTqKMEiK/brQtIKp3BheWxvYWTESpcCBsQgMzQiep8vzIs1zhqhnPWxiS809XAGpDtruHqW02iurIDEIEhOe5PHwFInsv26rejkekLe8zT7TFaKYa8rWsHGWfUfAgHCo3NpZ8RAZgWJTRe9lCc7CCrLzJvZ9N4HNuXg7Czleebt4dtKR3QomCP5ve7xK4A75TLYO/Sf3hjUHt5VCHqR/c82TgpxBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIGsBfEH7iHjtvcdmavvASO86jpvnYzIwtK+Sfpp1YL8o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sumithemmadi
+
+==================================================================
