@@ -1,9 +1,9 @@
-function removeRootElements() {
-  const rootElements = document.querySelectorAll('#root');
+// function removeRootElements() {
+//   const rootElements = document.querySelectorAll('#root');
 
-  for (const element of rootElements) {
-    element.parentNode.removeChild(element);
-  }
-}
+//   for (const element of rootElements) {
+//     element.parentNode.removeChild(element);
+//   }
+// }
 
-setTimeout(removeRootElements, 10000);
+// setTimeout(removeRootElements, 10000);
